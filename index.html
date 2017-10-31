@@ -3,10 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>vue-music</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <script>
+    let html = document.documentElement;
+
+    window.rem = html.getBoundingClientRect().width / 25 ;
+    html.style.fontSize = window.rem + 'px';
+  </script>
 </html>
