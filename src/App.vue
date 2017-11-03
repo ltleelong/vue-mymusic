@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- hello world -->
     <MHeader></MHeader>
     <tab></tab>
     <router-view></router-view>
